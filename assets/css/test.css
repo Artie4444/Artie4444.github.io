@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+  # Dropdown/Select List
+  --------------------------------------------------------------*/
+  .custom-select {
+    background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+    position: relative;
+    font-family: Arial;
+}
+  
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+  
+.select-selected {
+    background-color: #c5c69f;
+}
+  
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  background: #c4c69f;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 90px;;
+}
+  
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background: #c4c69f;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    bottom: 100%;
+    max-height:250px;
+    overflow:auto;
+}
+  
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

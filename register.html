@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The Pet Care Project</title>
+  <meta content="A project to save stray animals" name="description">
+  <meta content="stray, pets, adoption, donation " name="keywords">
+
+  <!-- Favicons ( Image as a logo instead of the bing image) -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Template Vendor CSS File -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+   <!-- Template Main CSS File -->
+   <link href="assets/css/register.css" rel="stylesheet">
+
+ <!--End of head part-->
+</head>
+
+<body>
+
+    <form id="regForm" action="/action_page.php">
+    <div class='signup-container'>
+        <div class='left-container'>
+        <h1>
+            <i class="bi bi-box-arrow-in-right"></i>
+            Sign Up Now!
+        </h1>
+        <div class='puppy'>
+            <img src="assets/img/logo2.png">
+        </div>
+        <h2>
+            Already have an account?
+        </h2>
+        <h3>
+            Sign in with your email and password now!
+        </h3>
+        <div class="signupbutton"><button type="submit">Sign In</button></div>
+        </div>
+        <div class='right-container'>
+        <header>
+            <h1>Hello everyone! Register today and find your destined pet!</h1>
+            <div class='form-group'>
+            <div class='user-name'>
+                <label for='Username'>User name</label>
+                <input id='pets-name' placeholder="Enter your Username" type='text'>
+            </div>
+            <div class='user-photo'>
+                <button id='user-upload'>
+                <i class="bi bi-camera"></i>
+                </button>
+                <label for='user-upload'>Upload a picture</label>
+            </div>
+            </div>
+            <div class='form-group'>
+            <div class='user-email'>
+                <label for='user-email'>Email</label>
+                <input id='user-email' placeholder="Enter your email" type='text'>
+            </div>
+            <div class='reuser-email'>
+                <label for='reuser-email'>Re-enter email</label>
+                <input id='reuser-email' placeholder='Make sure it matches' type='text'>
+            </div>
+            </div>
+            <div class='form-group'>
+            <div class='pets-gender'>
+                <label for='pet-gender-female'>Gender</label>
+                <div class='radio-container'>
+                <input checked='' id='pet-gender-female' name='pet-gender' type='radio' value='female'>
+                <label for='pet-gender-female'>Female</label>
+                <input id='pet-gender-male' name='pet-gender' type='radio' value='male'>
+                <label for='pet-gender-male'>Male</label>
+                </div>
+            </div>
+            <div class='pets-spayed-neutered'>
+                <label for='pet-spayed'>Spayed or Neutered</label>
+                <div class='radio-container'>
+                <input checked='' id='pet-spayed' name='spayed-neutered' type='radio' value='spayed'>
+                <label for='pet-spayed'>Spayed</label>
+                <input id='pet-neutered' name='spayed-neutered' type='radio' value='neutered'>
+                <label for='pet-neutered'>Neutered</label>
+                </div>
+            </div>
+            </div>
+            <div class='pets-weight'>
+            <label for='pet-weight-0-25'>Weight</label>
+            <div class='radio-container'>
+                <input checked='' id='pet-weight-0-25' name='pet-weight' type='radio' value='0-25'>
+                <label for='pet-weight-0-25'>0-25 lbs</label>
+                <input id='pet-weight-25-50' name='pet-weight' type='radio' value='25-50'>
+                <label for='pet-weight-25-50'>25-50 lbs</label>
+                <input id='pet-weight-50-100' name='pet-weight' type='radio' value='50-100'>
+                <label for='pet-weight-50-100'>50-100 lbs</label>
+                <input id='pet-weight-100-plus' name='pet-weight' type='radio' value='100+'>
+                <label for='pet-weight-100-plus'>100+ lbs</label>
+            </div>
+            </div> 
+            <div class='user-country'>
+                <label for='user-country'>State</label>
+            <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+            <div class="custom-select" style="width:150px;">
+                <select name="state" id="state">
+                    <option value="0">Pick a state:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+            </div>
+            </div>
+        </header>
+        <footer>
+            <div class='form-group'>
+            <button id='submit' >Submit</button>
+            </div>
+        </footer>
+        </div>
+    </div>
+</form>
+
+<!-- Template Main JS File -->
+<script src="assets/js/register.js"></script>
+
+</body>
+</html>
+  

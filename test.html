@@ -1,0 +1,21 @@
+
+<div class='user-country'>
+    <label for='user-country'>Country</label>
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select" style="width:100px;">
+    <script type= "text/javascript" src = "assets/js/countries.js"></script>
+    <select name="country" id="country">
+        <option value="" selected="selected">Country:</option>
+    </select>
+</div>
+<div class="custom-select" style="width:100px;">
+    <select name="state" id="state">
+        <option value="" selected="selected">State:</option>
+    </select>
+    <script language="javascript">
+        populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+    </script>  
+</div>
+</div>  
+<!-- Template Main JS File -->
+<script src="assets/js/countries.js"></script>

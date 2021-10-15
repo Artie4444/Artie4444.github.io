@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: url(../img/signup2.jpg) top center no-repeat;
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100vh;
+  justify-items: center;
+}
+/*--------------------------------------------------------------
+  # Container 
+  --------------------------------------------------------------*/
+
+.signup-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 900px;
+}
+/*--------------------------------------------------------------
+  # Left side container
+  --------------------------------------------------------------*/
+.left-container {
+  background: #807182;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+.left-container h1 {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 24px;
+}
+.left-container h1 i {
+  background: #c5c69f;
+  font-family: "Nunito", sans-serif;
+  border-radius: 50%;
+  color: #807182;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+.left-container h2 {
+  margin-top: 70px;
+  margin-left: 15px;
+  font-size: 16px;
+  margin-right: 5px;
+  padding: 10px; 
+}
+.left-container h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 5px;
+    padding: 10px; 
+    font-weight: 100;
+}
+.left-container .signupbutton button[type=submit]{
+    margin-top: 10px;
+    background: #cddabc;
+    font-family: "Nunito", sans-serif;
+    box-shadow: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 8px 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border:none;
+    font-weight: 700;
+    color: #52351e;;
+}
+.left-container .signupbutton button[type=submit]:hover{
+    background: #c4c69f;
+    color: #f7f7f7;
+}
+.left-container .puppy {
+  bottom: -5px;
+  position: absolute;
+  text-align: center;
+}
+.left-container .puppy:before {
+  background: #807182;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  width: 200%;
+  z-index: 1;
+}
+.left-container img {
+  filter: sepia(100%);
+  margin-left: 40px;
+  width: 100%;
+}
+/*--------------------------------------------------------------
+  # Right Side Container
+  --------------------------------------------------------------*/
+.right-container {
+  background: #c5c69f;
+  display: grid;
+  grid-template-areas: "." ".";
+  width: 500px;
+}
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  font-weight: 600;
+}
+.right-container .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.right-container input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+}
+.right-container input, .right-container label {
+  color: rgba(0, 0, 0, 0.8);
+}
+.right-container header {
+  padding: 40px;
+}
+.right-container label, .right-container input, .right-container .user-photo {
+  width: 176px;
+}
+.right-container .user-photo {
+  margin-top: 16px;
+  align-items: center;
+  display: grid;
+  grid-template-areas: ". .";
+}
+.right-container .user-photo button {
+  border: none;
+  border-radius: 50%;
+  height: 38px;
+  margin-right: 10px;
+  outline: none;
+  width: 38px;
+}
+.right-container .user-photo button i {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+.right-container .pets-weight .radio-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.right-container footer {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  padding: 5px 40px;
+}
+.right-container footer button {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+.right-container footer #submit {
+  background: #807182;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.right-container footer #submit:hover {
+  background: #171A2B;
+}
+
+.user-name label, .user-email label, .reuser-email label, .pets-gender label, .pets-spayed-neutered label, .pets-weight label {
+  display: block;
+  margin-bottom: 5px;
+}
+.user-country label{
+  margin-top: 5px;
+  display: block;
+  margin-bottom: 5px;
+}
+.radio-container {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.radio-container label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 80px;
+}
+
+.radio-container input[type=radio] {
+  display: none;
+}
+
+.radio-container input[type=radio]:checked + label {
+  background: #c5c69f;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/*--------------------------------------------------------------
+  # Dropdown/Select List
+  --------------------------------------------------------------*/
+.custom-select {
+    background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+    position: relative;
+    font-family: Arial;
+}
+  
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+  
+.select-selected {
+    background-color: #c5c69f;
+}
+  
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  background: #c4c69f;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 140px;
+  display: inline-block;
+}
+  
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background: #c4c69f;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    bottom: 100%;
+    max-height:250px;
+    overflow:auto;
+}
+  
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
